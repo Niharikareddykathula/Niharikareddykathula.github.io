@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niharika Reddy Kathula Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Niharika Reddy Kathula</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/ncsu.jpg" alt="NC State University" style="width:150px; border-radius:10px; display:block; margin:auto;">
+        <img src="images/profile.jpg" alt="Niharika Reddy Kathula" style="width:150px; border-radius:50%; display:block; margin:auto;">
+        <p>I am currently pursuing a Master of Science in Computer Engineering at North Carolina State University...</p>
+    </section>
+    <!-- Other sections omitted for brevity -->
+
+    <section id="leadership">
+        <h2>Leadership</h2>
+        <div style="display: flex; align-items: center;">
+            <p onclick="openModal()" style="cursor: pointer; text-decoration: underline; color: blue;">Click here to read more about my leadership journey with TEC</p>
+            <img src="images/leadership.jpg" alt="Leadership Image" style="width:150px; border-radius:10px;">
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="leadershipModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>“Life is full of Surprises, and sometimes the best things happen by chance” - My Journey with TEC</h2>
+            <p>Reflecting on the past 3 years, I can't help but feel grateful for the unexpected opportunities that came my way...</p>
+            <div class="modal-images">
+                <img src="images/tec1.jpg" alt="TEC Event 1" style="width:100px; margin:10px;">
+                <img src="images/tec2.jpg" alt="TEC Event 2" style="width:100px; margin:10px;">
+                <img src="images/tec3.jpg" alt="TEC Event 3" style="width:100px; margin:10px;">
+            </div>
+            <p>TEC, a prestigious club at SNIST, operates under the guiding principle of "learn, share, and prosper"...</p>
+            <!-- Full text from your description -->
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("leadershipModal").style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById("leadershipModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
